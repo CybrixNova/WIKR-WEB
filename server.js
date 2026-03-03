@@ -39,7 +39,7 @@ app.get('/about', (req, res)=>{
 
 
 app.get('/api/now-playing',(req, res)=>{
-    axios.get('http://ice1.wikrradio.com/status-json.xsl')
+    axios.get('http://wikr.cybrixnova.com/status-json.xsl')
       .then(function (response) {
         //console.log(response.data.icestats.source.title);
         res.send(response.data.icestats.source.title)
@@ -60,7 +60,7 @@ app.post('/api/nowplaying', (req, res)=>{
 
 
 app.get('/api/now-playing-image',(req, res)=>{
-  axios.get('http://ice1.wikrradio.com/status-json.xsl')
+  axios.get('http://wikr.cybrixnova.com/status-json.xsl')
     .then(function (response1) {
       //console.log(response1.data.icestats.source.title);
 
