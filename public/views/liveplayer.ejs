@@ -101,7 +101,7 @@ setInterval(refreshNPImage, 5000);
   const player = document.getElementById("player");
 
   function startStream() {
-    const url = "https://ice1.cybrixnova.com/WIKR?_=" + Date.now();
+    const url = "https://ice1.wikrradio.com/WIKR?_=" + Date.now();
     player.src = url;
     player.load();
     player.play().catch(() => {});
